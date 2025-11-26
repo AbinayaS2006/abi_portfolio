@@ -20,7 +20,7 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(6px);
 }
 
@@ -57,7 +57,6 @@ header {
     color: #00c3ff;
 }
 
-
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -66,7 +65,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 40px;
-    background: linear-gradient(to bottom right, #001f2e, #000000);
+    background: linear-gradient(to bottom right, #003044, #000000);
 }
 
 .hero h1 {
@@ -83,20 +82,28 @@ header {
     margin-bottom: 20px;
 }
 
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 30px;
     margin-top: 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     background: #00c3ff;
     color: #000;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s ease;
+    box-shadow: 0 0 10px #00c3ff;
 }
 
 .btn:hover {
     background: #008ab3;
+    box-shadow: 0 0 20px #00c3ff;
 }
 
 
@@ -142,6 +149,7 @@ header {
 .skill-card:hover {
     transform: translateY(-10px);
     border-color: #00c3ff;
+    box-shadow: 0 0 20px #00c3ff;
 }
 
 .skill-card i {
@@ -159,7 +167,7 @@ header {
     gap: 30px;
 }
 
-.project-card {
+project-card {
     padding: 25px;
     background: #111;
     border-radius: 10px;
@@ -170,6 +178,7 @@ header {
 .project-card:hover {
     transform: translateY(-10px);
     border-color: #00c3ff;
+    box-shadow: 0 0 20px #00c3ff;
 }
 
 .project-card h3 {
@@ -190,6 +199,7 @@ header {
 
 .project-btn:hover {
     background: #008ab3;
+    box-shadow: 0 0 15px #00c3ff;
 }
 
 
@@ -200,7 +210,7 @@ header {
 
 .contact-info p {
     margin: 10px 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .contact-info i {
@@ -212,8 +222,13 @@ header {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background: #000;
     border-top: 1px solid #111;
     color: #888;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
